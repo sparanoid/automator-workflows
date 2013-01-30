@@ -19,4 +19,4 @@ Resize your images to specific size or by percentage.
 Restart your Finder, I packed it as an application since bash script has been limited in Mt. Lion.
 
 ## ShowFiles.app
-Toggle Hidden files in a simple click, you can execute it in [LaunchBar](www.obdev.at/launchbar/)
+Toggle Hidden files in a simple click, you can execute it in [LaunchBar](www.obdev.at/launchbar/).

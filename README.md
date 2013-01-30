@@ -1,5 +1,5 @@
 # Tunghsiao Liu's Automator Workflows
-A collection of Automator workflows speeds up your design / development process.
+A collection of Automator workflows that speed up your design / development process.
 
 ## Convert Image Format.workflow
 Convert selected images to specific format.

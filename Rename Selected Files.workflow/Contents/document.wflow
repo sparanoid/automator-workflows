@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>339.2</string>
+	<string>346</string>
 	<key>AMApplicationVersion</key>
-	<string>2.2.4</string>
+	<string>2.3</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,7 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.3.1</string>
+				<string>1.3.2</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
@@ -145,7 +145,7 @@
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AddNumbersToFinderNames</string>
 				<key>CFBundleVersion</key>
-				<string>1.3.1</string>
+				<string>1.3.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -476,12 +476,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:619.000000</string>
+				<string>309.500000:554.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -493,8 +491,18 @@
 	<dict/>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
 </dict>
 </plist>

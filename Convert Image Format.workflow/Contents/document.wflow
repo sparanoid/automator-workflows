@@ -68,7 +68,7 @@
 				<key>Class Name</key>
 				<string>AMChangeImageTypeAction</string>
 				<key>InputUUID</key>
-				<string>EACB1EC5-1C7B-4F47-813C-22FA88645C9D</string>
+				<string>945E4FA1-9BB9-4A01-B35C-92A4A169D4C9</string>
 				<key>Keywords</key>
 				<array>
 					<string>Image</string>
@@ -78,15 +78,11 @@
 					<string>Set</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>29D68D5C-9D65-41D2-8004-6E2991F4BAAF</string>
-				<key>SelectedShowWhenRunItemNames</key>
-				<array/>
-				<key>ShowOnlySelectedItemsWhenRun</key>
-				<false/>
+				<string>215754F2-A6EF-4724-96BB-8D3C1F935673</string>
 				<key>ShowWhenRun</key>
 				<true/>
 				<key>UUID</key>
-				<string>FEFC5F52-7501-49B5-AD06-AEC03653D079</string>
+				<string>AF982E05-9E52-4208-82BE-AB003C175E7D</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Preview</string>
@@ -110,7 +106,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:594.000000</string>
+				<string>309.500000:554.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Change Type of Images.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -122,8 +118,18 @@
 	<dict/>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
 </dict>
 </plist>

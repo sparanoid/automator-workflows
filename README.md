@@ -35,6 +35,12 @@ The icon you created should be 1024×1024 with an sRGB color profile. You can re
 
 **Note**: You should always select the original file during the workflow, don’t press any key or click your mouse.
 
+## Create .icns
+Create .icns file using `iconutil`. Command Line Tools from Xcode must be installed before using this workflow.
+
+## Unpack .icns
+Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
+
 ## Remove @2x Suffix.workflow
 Remove @2x suffix for retina image assets. Useful when you're doing something wrong and need to recreate downscaled images one more time.
 

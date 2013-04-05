@@ -52,6 +52,9 @@ Unpack .icns into .iconset folder. Command Line Tools from Xcode must be install
 Remove @2x suffix for retina image assets. Useful when you're doing something wrong and need to recreate downscaled images one more time.
 
 ### Rename Selected Files
+
+![Rename Finder Items](https://raw.github.com/sparanoid/screenshots/automator-workflows/01-rename-finder-items.png)
+
 What? You just bought [A Better Finder Rename](http://www.publicspace.net/ABetterFinderRename/)?
 
 ### Resize Images

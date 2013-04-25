@@ -48,6 +48,11 @@ Create .icns file using `iconutil`. Command Line Tools from Xcode must be instal
 ### Unpack .icns
 Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
 
+### Create DMG Image
+Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a directory first to use this script. You’ll be prompted to enter a volume name for your image, then Voilà!
+
+**Note**: This script doens’t create “fancy” DMG for your OS X app.
+
 ### Remove @2x Suffix
 Remove @2x suffix for retina image assets. Useful when you're doing something wrong and need to recreate downscaled images one more time.
 

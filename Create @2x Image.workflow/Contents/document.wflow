@@ -43,7 +43,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -55,7 +58,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -76,7 +82,10 @@
 					<key>startingNumber</key>
 					<dict/>
 					<key>textInput</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>textToFind</key>
 					<dict>
 						<key>tokenizedValue</key>
@@ -184,8 +193,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>E43F0AA4-0585-41FC-85A2-8394FA0AC71C</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>0999FCBD-184F-45AE-B114-DBDA60251626</string>
 				<key>UnlocalizedApplications</key>
@@ -481,12 +488,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:1503.000000</string>
+				<string>364.000000:1503.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -526,7 +531,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -538,7 +546,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -970,7 +981,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:1284.000000</string>
+				<string>364.000000:1284.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1010,7 +1021,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -1022,7 +1036,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -1043,7 +1060,10 @@
 					<key>startingNumber</key>
 					<dict/>
 					<key>textInput</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>textToFind</key>
 					<dict>
 						<key>tokenizedValue</key>
@@ -1151,8 +1171,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>47D7BA02-6C18-4CAB-8D73-AEC7A2F0E3CE</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D</string>
 				<key>UnlocalizedApplications</key>
@@ -1448,12 +1466,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:1065.000000</string>
+				<string>364.000000:1065.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1493,7 +1509,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -1505,7 +1524,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -1639,8 +1661,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>DF63FFCA-4C4B-42AF-8775-DDCB84C528C3</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>22FAD317-E924-4D34-88DD-9E06EC004EC4</string>
 				<key>UnlocalizedApplications</key>
@@ -1936,12 +1956,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:846.000000</string>
+				<string>364.000000:846.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2165,7 +2183,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:561.000000</string>
+				<string>364.000000:561.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2205,7 +2223,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -2217,7 +2238,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -2236,7 +2260,10 @@
 					<key>startingNumber</key>
 					<dict/>
 					<key>textInput</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>textToFind</key>
 					<dict>
 						<key>tokenizedValue</key>
@@ -2642,7 +2669,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:458.000000</string>
+				<string>364.000000:458.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2682,7 +2709,10 @@
 					<key>dateToUse</key>
 					<dict/>
 					<key>defaultName</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>ignoreCase</key>
 					<dict/>
 					<key>includeExtensions</key>
@@ -2694,7 +2724,10 @@
 					<key>nameDateSeparator</key>
 					<dict/>
 					<key>nameSingleItem</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>numberLocation</key>
 					<dict/>
 					<key>numberSeparator</key>
@@ -2715,7 +2748,10 @@
 					<key>startingNumber</key>
 					<dict/>
 					<key>textInput</key>
-					<dict/>
+					<dict>
+						<key>tokenizedValue</key>
+						<array/>
+					</dict>
 					<key>textToFind</key>
 					<dict>
 						<key>tokenizedValue</key>
@@ -2823,8 +2859,6 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>FF34817B-418C-4578-A4A1-23E54716E538</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>2E28BA99-6E1D-44CC-B661-2A03C2F6AC67</string>
 				<key>UnlocalizedApplications</key>
@@ -3120,12 +3154,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>339.500000:239.000000</string>
+				<string>364.000000:239.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -3135,54 +3167,54 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>109D59C2-96EC-433C-BC68-F018040DAD99</key>
-		<dict>
-			<key>from</key>
-			<string>6D2F4BF4-79B8-4929-B64F-E4C49268FE31 - 6D2F4BF4-79B8-4929-B64F-E4C49268FE31</string>
-			<key>to</key>
-			<string>2E28BA99-6E1D-44CC-B661-2A03C2F6AC67 - 2E28BA99-6E1D-44CC-B661-2A03C2F6AC67</string>
-		</dict>
-		<key>122DD650-537A-497A-82AC-A1EAB149AEA4</key>
-		<dict>
-			<key>from</key>
-			<string>ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D - ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D</string>
-			<key>to</key>
-			<string>22FAD317-E924-4D34-88DD-9E06EC004EC4 - 22FAD317-E924-4D34-88DD-9E06EC004EC4</string>
-		</dict>
-		<key>1CE71544-6FCF-44B0-8959-FD5CB6DBC71F</key>
-		<dict>
-			<key>from</key>
-			<string>10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA - 10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA</string>
-			<key>to</key>
-			<string>ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D - ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D</string>
-		</dict>
-		<key>3EE29945-1B20-4894-88D6-57E5F0A507C2</key>
-		<dict>
-			<key>from</key>
-			<string>22FAD317-E924-4D34-88DD-9E06EC004EC4 - 22FAD317-E924-4D34-88DD-9E06EC004EC4</string>
-			<key>to</key>
-			<string>0AC7D88D-1D67-4340-BB35-934711C8F0A8 - 0AC7D88D-1D67-4340-BB35-934711C8F0A8</string>
-		</dict>
-		<key>47A8CEF5-0F3A-43EC-9803-0050F2E018F1</key>
-		<dict>
-			<key>from</key>
-			<string>FF87AED6-E166-4874-8B1C-3E0091F44757 - FF87AED6-E166-4874-8B1C-3E0091F44757</string>
-			<key>to</key>
-			<string>6D2F4BF4-79B8-4929-B64F-E4C49268FE31 - 6D2F4BF4-79B8-4929-B64F-E4C49268FE31</string>
-		</dict>
-		<key>6B4AE3CA-8936-4F26-83C1-D87BF1C16E47</key>
+		<key>3D49926A-AC43-4F6C-9BE1-58D16121961B</key>
 		<dict>
 			<key>from</key>
 			<string>0999FCBD-184F-45AE-B114-DBDA60251626 - 0999FCBD-184F-45AE-B114-DBDA60251626</string>
 			<key>to</key>
 			<string>10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA - 10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA</string>
 		</dict>
-		<key>D6A30FD1-FCB7-4CE1-A3B7-AC05164010E4</key>
+		<key>828288F6-3635-4D15-80D8-AF04BB2D498F</key>
 		<dict>
 			<key>from</key>
 			<string>0AC7D88D-1D67-4340-BB35-934711C8F0A8 - 0AC7D88D-1D67-4340-BB35-934711C8F0A8</string>
 			<key>to</key>
 			<string>FF87AED6-E166-4874-8B1C-3E0091F44757 - FF87AED6-E166-4874-8B1C-3E0091F44757</string>
+		</dict>
+		<key>9DEE90D6-E16C-4A77-8F0E-C4F3ABA0E711</key>
+		<dict>
+			<key>from</key>
+			<string>10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA - 10C27FCF-30DF-4C94-98B4-2E34FA1FE0BA</string>
+			<key>to</key>
+			<string>ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D - ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D</string>
+		</dict>
+		<key>B5294D43-009F-48C9-912C-8338E9D4D4F2</key>
+		<dict>
+			<key>from</key>
+			<string>FF87AED6-E166-4874-8B1C-3E0091F44757 - FF87AED6-E166-4874-8B1C-3E0091F44757</string>
+			<key>to</key>
+			<string>6D2F4BF4-79B8-4929-B64F-E4C49268FE31 - 6D2F4BF4-79B8-4929-B64F-E4C49268FE31</string>
+		</dict>
+		<key>C34B3468-26BF-460B-A8D8-ACBC6A345E82</key>
+		<dict>
+			<key>from</key>
+			<string>ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D - ABB641B5-D3D6-4CD5-9B35-C022EC4F6A2D</string>
+			<key>to</key>
+			<string>22FAD317-E924-4D34-88DD-9E06EC004EC4 - 22FAD317-E924-4D34-88DD-9E06EC004EC4</string>
+		</dict>
+		<key>D23E41D3-12E4-4B5A-B1E3-0CEB6EA4AAAD</key>
+		<dict>
+			<key>from</key>
+			<string>6D2F4BF4-79B8-4929-B64F-E4C49268FE31 - 6D2F4BF4-79B8-4929-B64F-E4C49268FE31</string>
+			<key>to</key>
+			<string>2E28BA99-6E1D-44CC-B661-2A03C2F6AC67 - 2E28BA99-6E1D-44CC-B661-2A03C2F6AC67</string>
+		</dict>
+		<key>DE63015C-E4B0-4656-ABF9-52F97BD1E402</key>
+		<dict>
+			<key>from</key>
+			<string>22FAD317-E924-4D34-88DD-9E06EC004EC4 - 22FAD317-E924-4D34-88DD-9E06EC004EC4</string>
+			<key>to</key>
+			<string>0AC7D88D-1D67-4340-BB35-934711C8F0A8 - 0AC7D88D-1D67-4340-BB35-934711C8F0A8</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

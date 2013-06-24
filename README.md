@@ -58,7 +58,7 @@ Remove @2x suffix for retina image assets. Useful when you're doing something wr
 
 ### Rename Selected Files
 
-![Rename Finder Items](https://raw.github.com/sparanoid/screenshots/automator-workflows/01-rename-finder-items.png)
+![Rename Finder Items](https://raw.github.com/sparanoid/rsrc/automator-workflows/01-rename-finder-items.png)
 
 What? You just bought [A Better Finder Rename](http://www.publicspace.net/ABetterFinderRename/)?
 

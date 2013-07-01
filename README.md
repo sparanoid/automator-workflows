@@ -53,6 +53,9 @@ Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a
 
 **Note**: This script doens’t create “fancy” DMG for your OS X app.
 
+### Open with rmate
+Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your rmate location, in this workflow, the path of rmate is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
+
 ### Remove @2x Suffix
 Remove @2x suffix for retina image assets. Useful when you're doing something wrong and need to recreate downscaled images one more time.
 

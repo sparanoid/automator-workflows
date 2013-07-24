@@ -1,10 +1,15 @@
 # Tunghsiao Liu’s Automator Workflows
 A collection of Automator workflows that speed up your design / development process. Compatible with LaunchBar.
 
-
 ## Installation
 
-Copy the workflows to `~/Library/Services/`.
+Paste the following code at a Terminal prompt:
+
+```shell
+bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go)
+```
+
+The script explains what it will do and then pauses before it does it. If you don’t trust it, just manually copy the workflows to `~/Library/Services/`.
 
 ## Workflow List
 

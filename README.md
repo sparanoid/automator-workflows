@@ -56,6 +56,11 @@ Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a
 ### Compress SVG with SVGO
 Compress all SVG files in a folder (folder workflow) with [svgo](https://github.com/svg/svgo), `svgo` must be installed before using this workflow. Please note that since `svgo` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `svgo` location, in this workflow, the path of `svgo` is `/usr/local/share/npm/bin/svgo`. (node and npm installed by [Homebrew](http://mxcl.github.io/homebrew/)).
 
+### Compress PNG with OptiPNG
+Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), `optipng` must be installed before using this workflow. Please note that since `optipng` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `optipng` location, in this workflow, the path of `optipng` is `/usr/local/bin/optipng`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+
+**Note**: The default compress option is set to `-o7` (smallest file size and slowest), You may need change that.
+
 ### Open with rmate
 Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
 

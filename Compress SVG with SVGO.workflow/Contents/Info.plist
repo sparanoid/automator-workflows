@@ -19,7 +19,7 @@
 			</dict>
 			<key>NSSendFileTypes</key>
 			<array>
-				<string>public.folder</string>
+				<string>public.image</string>
 			</array>
 		</dict>
 	</array>

@@ -65,6 +65,9 @@ Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a
 
 **Note**: This script doens’t create “fancy” DMG for your OS X app.
 
+### Open with rmate
+Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
+
 ### Compress SVG with SVGO
 Compress selected SVG files with [svgo](https://github.com/svg/svgo), `svgo` must be installed before using this workflow. Please note that since `svgo` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `svgo` location, in this workflow, the path of `svgo` is `/usr/local/share/npm/bin/svgo`. (node and npm installed by [Homebrew](http://mxcl.github.io/homebrew/)).
 
@@ -78,8 +81,12 @@ Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim),
 
 **Note**: The default compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
 
-### Open with rmate
-Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
+### Compress Images
+This is a much simple workflow bundled with the three individual images compress workflows listed above. it auto detects the file type of selected images and compress them, `.png`, `.jpg` and `.svg` are supported. Of course `optipng`, `jpegoptim` and `svgo` must be installed before using this workflow.
+
+**Note #1**: The default compress option for each type of file is same as the individual compress workflow.
+
+**Note #2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 
 ### Restart Finder
 Restart your Finder, you can execute it in [LaunchBar](www.obdev.at/launchbar/). I packed it as an application since bash script has been limited in Mt. Lion. I also include an unpacked Automator service for this app.

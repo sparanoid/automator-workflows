@@ -353,7 +353,7 @@
 					<string>PATH=$PATH:/usr/local/bin
 for f in "$@"; do
 	/usr/local/bin/jpegoptim "$f" --strip-all --force --all-progressive
-done</string>
+done;</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>

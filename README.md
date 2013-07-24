@@ -82,9 +82,9 @@ Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim),
 **Note**: The default compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
 
 ### Compress Images
-This is a much simple workflow bundled with the three individual images compress workflows listed above. it auto detects the file type of selected images and compress them, `.png`, `.jpg` and `.svg` are supported. Of course `optipng`, `jpegoptim` and `svgo` must be installed before using this workflow.
+This is a much simple workflow bundled with the three individual image compress workflows listed above. It auto detects the file type of selected images and compress them. `.png`, `.jpg` and `.svg` are supported. Of course `optipng`, `jpegoptim` and `svgo` must be installed before using this workflow.
 
-**Note #1**: The default compress option for each type of file is same as the individual compress workflow.
+**Note #1**: The default compress option for each type of images is the same as the individual compress workflow.
 
 **Note #2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 

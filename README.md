@@ -103,5 +103,5 @@ Toggle Hidden files in a simple click, it’s an app just like `Restart Finder.a
 
 **Tunghsiao Liu**
 
-+ http://twitter.com/tunghsiao
-+ http://github.com/sparanoid
+- Twitter: @[tunghsiao](http://twitter.com/tunghsiao)
+- GitHub: @[sparanoid](http://github.com/sparanoid)

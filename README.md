@@ -61,6 +61,11 @@ Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), `op
 
 **Note**: The default compress option is set to `-o7` (smallest file size and slowest), You may need change that.
 
+### Compress JPEG with jpegoptim
+Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim), `jpegoptim` must be installed before using this workflow. Please note that since `jpegoptim` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `jpegoptim` location, in this workflow, the path of `jpegoptim` is `/usr/local/bin/jpegoptim`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+
+**Note**: The default compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
+
 ### Open with rmate
 Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
 

@@ -1,0 +1,79 @@
+#!/bin/bash
+
+dist_path="$HOME/Library/Services"
+package_name="automator-workflows-master"
+P=" -"
+
+mkdir -p "$dist_path"
+
+function ask {
+  while true; do
+
+    if [ "${2:-}" = "Y" ]; then
+      prompt="Y/n"
+      default=Y
+    elif [ "${2:-}" = "N" ]; then
+      prompt="y/N"
+      default=N
+    else
+      prompt="y/n"
+      default=
+    fi
+
+    # Ask the question
+    read -p "$1 [$prompt] " REPLY
+
+    # Default?
+    if [ -z "$REPLY" ]; then
+      REPLY=$default
+    fi
+
+    # Check if the reply is valid
+    case "$REPLY" in
+      Y*|y*) return 0 ;;
+      N*|n*) return 1 ;;
+    esac
+
+  done
+}
+
+echo -e "\nTUNGHSIAO LIU’S AUTOMATOR WORKFLOWS"
+echo -e "-----------------------------------"
+echo -e "\nby Tunghsiao Liu - 2013\n"
+echo -e "You're going to install Tunghsiao Liu’s Automator Workflows collection,"
+echo -e "it's safe to run this script, you can view the source at: \n"
+echo -e "   https://raw.github.com/sparanoid/automator-workflows/go \n"
+
+if ask "** Are you sure you want to install?" N; then
+
+  # Remove previous installs
+  echo -e "\n$P Cleanning old files..."
+  rm -rf $dist_path/master.zip $dist_path/$package_name/
+
+  # Download package from GitHub
+  echo -e "$P Downloading install package..."
+  curl -LSs http://github.com/sparanoid/automator-workflows/archive/master.zip -o $dist_path/master.zip
+
+  # Unpackage
+  echo -e "$P Unpackaging..."
+  unzip -qq -o $dist_path/master.zip -d $dist_path
+
+  # Copy workflows to Services folder
+  echo -e "$P Copying workflows to ~/Library/Services/ ..."
+  cp -RfX $dist_path/$package_name/*.workflow $dist_path/
+
+  # Copy applications to Applications folder
+  echo -e "$P Copying applications to /Applications/ ..."
+  cp -RfX $dist_path/$package_name/*.app /Applications/
+
+  # Remove junk
+  echo -e "$P Cleaning up..."
+  rm -rf $dist_path/master.zip $dist_path/$package_name/
+
+  echo -e "\nDone, enjoy."
+
+else
+
+  echo -e "\nCanceled."
+
+fi

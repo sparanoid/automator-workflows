@@ -11,7 +11,7 @@ bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go)
 
 The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/sparanoid/automator-workflows/releases) and manually copy the workflows to `~/Library/Services/`.
 
-## Workflow List
+## Available Workflows
 
 ### Create App Iconset
 Create the following sizes of icon resources for your OS X app:

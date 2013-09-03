@@ -39,7 +39,7 @@ Create .icns file using `iconutil`. Command Line Tools from Xcode must be instal
 ### Unpack .icns
 Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
 
-### Create favicon.ico
+### Create `favicon.ico`
 Create 32x32 and 16x16 `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
 
 ### Add `@2x` Suffix

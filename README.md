@@ -9,7 +9,7 @@ Paste the following code at a Terminal prompt:
 bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go)
 ```
 
-The script explains what it will do and then pauses before it does it. If you don’t trust it, just manually copy the workflows to `~/Library/Services/`.
+The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/sparanoid/automator-workflows/releases) and manually copy the workflows to `~/Library/Services/`.
 
 ## Workflow List
 

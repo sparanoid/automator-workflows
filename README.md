@@ -97,10 +97,12 @@ This is a much simple workflow bundled with the three individual image compress 
 **Note #2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 
 ### Restart Finder
-Restart your Finder, you can execute it in [LaunchBar](www.obdev.at/launchbar/). I packed it as an application since bash script has been limited in Mt. Lion. I also include an unpacked Automator service for this app.
+Restart your Finder without logging out or restarting your system.
+
+**Note**: This workflow is a little bit different from others, in Mountain Lion or higher it can only be executed by Automator, that means you have to open this workflow in Automator and press Run button to execute it.
 
 ### Show Files
-Toggle Hidden files in a simple click, it’s an app just like `Restart Finder.app`.
+Toggle displaying hidden files, it’s also an workflow just like `Restart Finder.app`.
 
 ## Author
 

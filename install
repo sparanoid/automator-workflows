@@ -62,10 +62,6 @@ if ask "** Are you sure you want to install?" N; then
   echo -e "$P Copying workflows to ~/Library/Services/ ..."
   cp -RfX $dist_path/$package_name/*.workflow $dist_path/
 
-  # Copy applications to Applications folder
-  echo -e "$P Copying applications to /Applications/ ..."
-  cp -RfX $dist_path/$package_name/*.app /Applications/
-
   # Remove junk
   echo -e "$P Cleaning up..."
   rm -rf $dist_path/master.zip $dist_path/$package_name/

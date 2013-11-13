@@ -1,5 +1,5 @@
 # Tunghsiao Liu’s Automator Workflows
-A collection of Automator workflows that speed up your design / development process. Compatible with LaunchBar.
+A collection of Automator workflows that speed up your design and development process. Compatible with LaunchBar.
 
 ## Installation
 Paste the following code at a Terminal prompt:

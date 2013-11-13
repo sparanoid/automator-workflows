@@ -2,7 +2,6 @@
 A collection of Automator workflows that speed up your design / development process. Compatible with LaunchBar.
 
 ## Installation
-
 Paste the following code at a Terminal prompt:
 
 ```shell
@@ -105,7 +104,6 @@ Restart your Finder without logging out or restarting your system.
 Toggle displaying hidden files, it’s also an workflow just like `Restart Finder.app`.
 
 ## Author
-
 **Tunghsiao Liu**
 
 - Twitter: @[tunghsiao](http://twitter.com/tunghsiao)

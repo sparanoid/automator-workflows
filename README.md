@@ -95,6 +95,9 @@ This is a much simple workflow bundled with the three individual image compress 
 
 **Note #2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 
+### Encode Selected Images using Base64
+Encode Selected Images using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).
+
 ### Restart Finder
 Restart your Finder without logging out or restarting your system.
 

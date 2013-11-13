@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -182,9 +182,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:560.000000</string>
+				<string>309.500000:737.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -225,11 +225,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.string</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -296,9 +294,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:455.000000</string>
+				<string>309.500000:633.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -370,8 +368,8 @@ for f in "$@"; do
 			echo "No jpegoptim installed, skipped."
 		fi
 	elif [[ $f == *.svg ]]; then
-		if [ -f "/usr/local/share/npm/bin/svgo" ]; then
-			/usr/local/share/npm/bin/svgo "$f"
+		if [ -f "/usr/local/bin/svgo" ]; then
+			/usr/local/bin/svgo "$f"
 		else
 			echo "No SVGO installed, skipped."
 		fi
@@ -494,7 +492,7 @@ done;
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:352.000000</string>
+				<string>309.500000:530.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -504,26 +502,26 @@ done;
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>30BF293B-52A2-4AA4-8085-B8A9A615FBFF</key>
+		<key>41080A3E-54CD-49CB-902B-08913AEC8281</key>
 		<dict>
 			<key>from</key>
-			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
-			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+			<key>to</key>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 		</dict>
-		<key>610F7B95-25F3-48CC-88B1-C7FC6AF9D72A</key>
+		<key>76372B5D-1E0A-4F53-B3E9-FB59EE9C5989</key>
 		<dict>
 			<key>from</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 			<key>to</key>
 			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
-		<key>9293506A-7FED-4097-B056-BB8A791162AB</key>
+		<key>D9CF0D87-06D6-4699-9FD7-DC91FED4194D</key>
 		<dict>
 			<key>from</key>
-			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 		</dict>
 	</dict>
 	<key>variables</key>

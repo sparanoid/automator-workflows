@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -182,9 +182,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:519.000000</string>
+				<string>309.500000:488.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -296,9 +296,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:414.000000</string>
+				<string>309.500000:384.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -354,7 +354,7 @@
 					<key>COMMAND_STRING</key>
 					<string>PATH=$PATH:/usr/local/bin
 for f in "$@"; do
-	/usr/local/bin/optipng -o7 "$f"
+	/usr/local/bin/optipng -o7 "$f" &amp;&amp; /usr/local/bin/pngcrush -brute -reduce -ow "$f"
 done;</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -470,7 +470,7 @@ done;</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:257.000000</string>
+				<string>309.500000:281.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -480,26 +480,26 @@ done;</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>3CB37624-21B5-4DF1-9560-24BCE5089AF1</key>
-		<dict>
-			<key>from</key>
-			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
-			<key>to</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
-		</dict>
-		<key>CDBE6113-A9C4-4EC6-82D9-F8827D936B2C</key>
-		<dict>
-			<key>from</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
-			<key>to</key>
-			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
-		</dict>
-		<key>D1B8D436-0A50-4EDB-9F67-CC87E0F59912</key>
+		<key>2C2C5B2F-AC70-4FEC-8FC4-DB8626BC270E</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+		</dict>
+		<key>3E3243C2-2AD2-4BFA-8E6B-9054767600CA</key>
+		<dict>
+			<key>from</key>
+			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+			<key>to</key>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+		</dict>
+		<key>496F31B3-CD7A-4FE1-A192-18FDAAB98B1E</key>
+		<dict>
+			<key>from</key>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+			<key>to</key>
+			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
 	</dict>
 	<key>variables</key>

@@ -81,9 +81,9 @@ Compress selected SVG files with [svgo](https://github.com/svg/svgo), `svgo` mus
 ### Compress PNG
 Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and [Pngcrush](http://pmt.sourceforge.net/pngcrush/), `optipng` and `pngcrush` must be installed before using this workflow. Please note that since `optipng` and `pngcrush` are third-party scripts, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for these binaries, in this workflow, `optipng` and `pngcrush` are located at `/usr/local/bin/`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
 
-**Note #1**: The default `optipng` compress option is set to `-o7` (smallest file size and slowest), You may need change that.
+**Note #1**: The default `optipng` compress option is set to `-o7` (smallest file size and slowest), you may need change that.
 
-**Note #2**: The default `pngcrush` compress option is set to `-brute -reduce -ow` (try 138 different methods and do lossless color-type or bit-depth reduction), You may need change that.
+**Note #2**: The default `pngcrush` compress option is set to `-brute -reduce -ow` (try 138 different methods and do lossless color-type or bit-depth reduction), you may need change that.
 
 ### Compress JPEG
 Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim), `jpegoptim` must be installed before using this workflow. Please note that since `jpegoptim` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `jpegoptim` location, in this workflow, the path of `jpegoptim` is `/usr/local/bin/jpegoptim`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).

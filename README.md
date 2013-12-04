@@ -5,7 +5,7 @@ A collection of Automator workflows that speed up your design and development pr
 Paste the following code at a Terminal prompt:
 
 ```shell
-bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go)
+bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go/install)
 ```
 
 The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/sparanoid/automator-workflows/releases) and manually copy the workflows to `~/Library/Services/`.
@@ -85,7 +85,7 @@ Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and
 
 **Note #2**: The default `pngcrush` compress option is set to `-brute -reduce -ow` (try 138 different methods and do lossless color-type or bit-depth reduction), you may need change that.
 
-**Note #3**: `pngcrush` will take longer time for large images. 
+**Note #3**: `pngcrush` will take longer time for large images.
 
 ### Compress JPEG
 Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim), `jpegoptim` must be installed before using this workflow. Please note that since `jpegoptim` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `jpegoptim` location, in this workflow, the path of `jpegoptim` is `/usr/local/bin/jpegoptim`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).

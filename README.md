@@ -105,7 +105,7 @@ Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org
 ### Restart Finder
 Restart your Finder without logging out or restarting your system.
 
-**Note**: This workflow is a little bit different from others, in Mountain Lion or higher it can only be executed by Automator, that means you have to open this workflow in Automator and press Run button to execute it.
+:exclamation: **Note**: This workflow is a little bit different from others, in Mountain Lion or higher it can only be executed by Automator, that means you have to open this workflow in Automator and press Run button to execute it.
 
 ### Show Files
 Toggle displaying hidden files, it’s also an workflow just like `Restart Finder.app`.

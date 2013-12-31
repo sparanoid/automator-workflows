@@ -115,3 +115,7 @@ Toggle displaying hidden files, it’s also an workflow just like `Restart Finde
 
 - Twitter: @[tunghsiao](http://twitter.com/tunghsiao)
 - GitHub: @[sparanoid](http://github.com/sparanoid)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sparanoid/automator-workflows/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

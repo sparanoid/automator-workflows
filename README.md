@@ -72,7 +72,7 @@ What? You just bought [A Better Finder Rename](http://www.publicspace.net/ABette
 ### Create DMG Image
 Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a directory first to use this script. You’ll be prompted to enter a volume name for your image, then Voilà!
 
-**Note**: This script doens’t create “fancy” DMG for your OS X app.
+**Note**: This script doesn’t create “fancy” DMG for your OS X app.
 
 ### Open with rmate
 Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).

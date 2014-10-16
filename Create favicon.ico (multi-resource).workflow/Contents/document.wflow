@@ -353,6 +353,8 @@
 					<string>PATH=$PATH:/usr/local/bin
 cd "$(dirname "$1")"
 /usr/local/bin/convert "$1" \
+\( -clone 0 -resize 16x16 \) \
+\( -clone 0 -resize 32x32 \) \
 \( -clone 0 -resize 48x48 \) \
 -delete 0 favicon.ico
 </string>
@@ -478,21 +480,21 @@ cd "$(dirname "$1")"
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>31C3ABA5-312C-4EF5-86BF-CF2BD76F4149</key>
+		<key>018D589C-B929-441B-888D-32A11A9364E9</key>
 		<dict>
 			<key>from</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
 			<key>to</key>
 			<string>4248E4B7-DFA8-4EA6-BF94-252B724FDEC2 - 4248E4B7-DFA8-4EA6-BF94-252B724FDEC2</string>
 		</dict>
-		<key>AFE103A1-A8DA-47B4-AD18-47AF43F106A0</key>
+		<key>606E584C-6088-4D5B-A70E-05501B775BF9</key>
 		<dict>
 			<key>from</key>
 			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 			<key>to</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
 		</dict>
-		<key>E52744C1-C750-4C0D-80D4-8A6CFCE03564</key>
+		<key>EB4A4C4D-8A4A-4ABC-82A4-32440831C85B</key>
 		<dict>
 			<key>from</key>
 			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>

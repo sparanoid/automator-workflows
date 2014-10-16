@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>332.500000:488.000000</string>
+				<string>345.000000:586.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -294,7 +294,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>332.500000:384.000000</string>
+				<string>345.000000:482.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -351,12 +351,21 @@
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>PATH=$PATH:/usr/local/bin
-cd "$(dirname "$1")"
-/usr/local/bin/convert "$1" \
-\( -clone 0 -resize 16x16 \) \
-\( -clone 0 -resize 32x32 \) \
-\( -clone 0 -resize 48x48 \) \
--delete 0 favicon.ico
+
+for f in "$@"; do
+
+	cd "$(dirname "$f")"
+
+	# http://regexr.com/39o5h
+	favicon_name=$(sed -E "s/^.*\/(.*)\..*$/\1/g" &lt;&lt;&lt; $f)
+
+	/usr/local/bin/convert "$f" \
+	\( -clone 0 -resize 16x16 \) \
+	\( -clone 0 -resize 32x32 \) \
+	\( -clone 0 -resize 48x48 \) \
+	-delete 0 $favicon_name.ico
+
+done;
 </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
@@ -470,7 +479,7 @@ cd "$(dirname "$1")"
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>332.500000:281.000000</string>
+				<string>345.000000:379.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -480,26 +489,26 @@ cd "$(dirname "$1")"
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>018D589C-B929-441B-888D-32A11A9364E9</key>
+		<key>279FE974-D22E-4AF4-8706-2F3F7BB89BA1</key>
+		<dict>
+			<key>from</key>
+			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>
+			<key>to</key>
+			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
+		</dict>
+		<key>9439E138-301F-44EE-8B3B-4AF33901D2B7</key>
 		<dict>
 			<key>from</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
 			<key>to</key>
 			<string>4248E4B7-DFA8-4EA6-BF94-252B724FDEC2 - 4248E4B7-DFA8-4EA6-BF94-252B724FDEC2</string>
 		</dict>
-		<key>606E584C-6088-4D5B-A70E-05501B775BF9</key>
+		<key>99F2698C-87A2-474E-9024-09AF7289B71A</key>
 		<dict>
 			<key>from</key>
 			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 			<key>to</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
-		</dict>
-		<key>EB4A4C4D-8A4A-4ABC-82A4-32440831C85B</key>
-		<dict>
-			<key>from</key>
-			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>
-			<key>to</key>
-			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 		</dict>
 	</dict>
 	<key>variables</key>

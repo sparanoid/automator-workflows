@@ -38,8 +38,16 @@ Create .icns file using `iconutil`. Command Line Tools from Xcode must be instal
 ### Unpack .icns
 Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
 
+### Create `favicon.ico` (multi-resource)
+Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 `favicon.ico` are included. `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+
+**Note 1**: You should only select one image, then multi-resource icos are automatically scaled down.
+**Note 2**: The selected image should be at least 48x48, for best result, use exact 48x48.
+
 ### Create `favicon.ico`
-Create 32x32 and 16x16 `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/). `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+
+**Note 1**: The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
 
 ### Add `@2x` (`@3x`) Suffix
 Add `@2x` or (`@3x`) suffix for retina image assets.

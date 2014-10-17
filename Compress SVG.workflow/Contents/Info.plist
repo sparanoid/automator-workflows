@@ -8,7 +8,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Compress SVG with SVGO</string>
+				<string>Compress SVG</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

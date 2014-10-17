@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -182,9 +182,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:498.000000</string>
+				<string>345.000000:488.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -294,9 +294,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:393.000000</string>
+				<string>345.000000:384.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -350,10 +350,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>PATH=$PATH:/usr/local/bin
-for f in "$@"; do
-	/usr/local/bin/jpegoptim "$f" --strip-all --force --all-progressive
-done;</string>
+					<string>export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+if hash jpegoptim 2&gt;/dev/null; then
+	for f in "$@"; do
+		jpegoptim "$f" --strip-all --force --all-progressive
+	done;
+else
+	echo "No jpegoptim installed, skipped."
+fi
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -468,7 +474,7 @@ done;</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:290.000000</string>
+				<string>345.000000:281.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -478,26 +484,26 @@ done;</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2877C28C-9763-4C85-B643-685930B54C0E</key>
+		<key>86081216-19C7-4FBB-A8AD-5267BDCF7EB8</key>
+		<dict>
+			<key>from</key>
+			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+			<key>to</key>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+		</dict>
+		<key>9C1C4A82-2D95-4FF4-ACC3-2AD4D951E1E3</key>
 		<dict>
 			<key>from</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 			<key>to</key>
 			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
-		<key>5B9C94F3-757F-4A01-A16C-24DB00DC34F2</key>
+		<key>D5FFECBB-DE5D-43CA-AAEE-776B602F721E</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
-		</dict>
-		<key>EBEFA3B6-9B38-4568-86AA-B066234D6732</key>
-		<dict>
-			<key>from</key>
-			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
-			<key>to</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 		</dict>
 	</dict>
 	<key>variables</key>

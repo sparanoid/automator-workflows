@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:488.000000</string>
+				<string>345.000000:491.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -225,11 +225,9 @@
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.string</string>
+						<string>*</string>
 					</array>
 				</dict>
 				<key>AMRequiredResources</key>
@@ -296,7 +294,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:384.000000</string>
+				<string>345.000000:387.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -352,10 +350,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>PATH=$PATH:/usr/local/bin
-for f in "$@"; do
-	/usr/local/bin/optipng -o7 "$f" &amp;&amp; /usr/local/bin/pngcrush -brute -reduce -ow "$f"
-done;</string>
+					<string>export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+if hash pngcrush 2&gt;/dev/null; then
+	for f in "$@"; do
+		optipng -o7 "$f" &amp;&amp; pngcrush -brute -reduce -ow "$f"
+	done;
+else
+	echo "No pngcrush installed, skipped."
+fi
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -470,7 +474,7 @@ done;</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:281.000000</string>
+				<string>345.000000:284.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -480,26 +484,26 @@ done;</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2C2C5B2F-AC70-4FEC-8FC4-DB8626BC270E</key>
+		<key>806781FD-1271-4F85-84B0-EC039C8EB42C</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 		</dict>
-		<key>3E3243C2-2AD2-4BFA-8E6B-9054767600CA</key>
-		<dict>
-			<key>from</key>
-			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
-			<key>to</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
-		</dict>
-		<key>496F31B3-CD7A-4FE1-A192-18FDAAB98B1E</key>
+		<key>E9E334AF-E7D3-4E68-8C3B-DBB8688EBCF6</key>
 		<dict>
 			<key>from</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 			<key>to</key>
 			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
+		</dict>
+		<key>F3DBD138-1D9E-4A2A-A0B7-62B55E31D64C</key>
+		<dict>
+			<key>from</key>
+			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
+			<key>to</key>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 		</dict>
 	</dict>
 	<key>variables</key>

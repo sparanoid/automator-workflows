@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:487.000000</string>
+				<string>345.000000:545.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -294,7 +294,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:383.000000</string>
+				<string>345.000000:441.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -350,10 +350,16 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>PATH=$PATH:/usr/local/bin
-for f in "$@"; do
-	/usr/local/bin/svgo "$f"
-done;</string>
+					<string>export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+if hash svgo 2&gt;/dev/null; then
+	for f in "$@"; do
+		svgo "$f"
+	done;
+else
+	echo "No svgo installed, skipped."
+fi
+</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -466,7 +472,7 @@ done;</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.500000:280.000000</string>
+				<string>345.000000:338.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -476,26 +482,26 @@ done;</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>A63B63A1-BE66-4A5C-BBDD-9278325BD79D</key>
+		<key>3C3281CB-4BD3-49BB-A48F-FBA674637266</key>
 		<dict>
 			<key>from</key>
-			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 			<key>to</key>
-			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
+			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 		</dict>
-		<key>AF1E187A-EB1F-45E0-9E28-AEDF3CD342D3</key>
+		<key>C5E8DE1E-8780-4BFD-A6AA-97598969F651</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 		</dict>
-		<key>CD10FBBC-45C7-491D-B369-B94097FD7C49</key>
+		<key>F7B94A06-BF33-4E1C-ADCC-AF997A983A44</key>
 		<dict>
 			<key>from</key>
-			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
-			<key>to</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
+			<key>to</key>
+			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
 	</dict>
 	<key>variables</key>

@@ -10,6 +10,9 @@ bash <(curl -fsSL https://raw.github.com/sparanoid/automator-workflows/go/instal
 
 The script explains what it will do and then pauses before it does it. If you don’t trust it, [download zip package](https://github.com/sparanoid/automator-workflows/releases) and manually copy the workflows to `~/Library/Services/`.
 
+## Other Notes
+Please note that some workflows are using third-party scripts, the default path of them (for example `imagemagick`) is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://brew.sh/)).
+
 ## Available Workflows
 
 ### Create App Iconset
@@ -39,13 +42,18 @@ Create .icns file using `iconutil`. Command Line Tools from Xcode must be instal
 Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
 
 ### Create `favicon.ico` (multi-resource)
-Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 are included. `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 are included.
+
+**Requires**: `imagemagick`
 
 **Note 1**: You should only select one image, then multi-resource icos are automatically scaled down.
+
 **Note 2**: The selected image should be at least 48x48, for best result, use exact 48x48.
 
 ### Create `favicon.ico`
-Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/). `imagemagick` must be installed before using this workflow. Please note that since `imagemagick` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `imagemagick` location, in this workflow, the path of `imagemagick` is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/).
+
+**Requires**: `imagemagick`
 
 **Note 1**: The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
 
@@ -83,13 +91,19 @@ Create distributable, cross-platform hybrid DMG images using `hdiutil`, select a
 **Note**: This script doesn’t create “fancy” DMG for your OS X app.
 
 ### Open with rmate
-Open selected file with [rmate](https://github.com/textmate/rmate), `rmate` must be installed before using this workflow. Please note that since `rmate` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `rmate` location, in this workflow, the path of `rmate` is `/usr/local/opt/ruby/bin/rmate` installed by [Homebrew](http://mxcl.github.io/homebrew/).
+Open selected file with [rmate](https://github.com/textmate/rmate).
+
+**Requires**: `rmate`
 
 ### Compress SVG
-Compress selected SVG files with [svgo](https://github.com/svg/svgo), `svgo` must be installed before using this workflow. Please note that since `svgo` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `svgo` location, in this workflow, the path of `svgo` is `/usr/local/bin/svgo`. (node and npm installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Compress selected SVG files with [svgo](https://github.com/svg/svgo).
+
+**Requires**: `svgo`
 
 ### Compress PNG
-Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and [Pngcrush](http://pmt.sourceforge.net/pngcrush/), `optipng` and `pngcrush` must be installed before using this workflow. Please note that since `optipng` and `pngcrush` are third-party scripts, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for these binaries, in this workflow, `optipng` and `pngcrush` are located at `/usr/local/bin/`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and [Pngcrush](http://pmt.sourceforge.net/pngcrush/).
+
+**Requires**: `optipng`, and `pngcrush`
 
 **Note 1**: The default `optipng` compress option is set to `-o7` (smallest file size and slowest), you may need change that.
 
@@ -98,12 +112,16 @@ Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and
 **Note 3**: `pngcrush` will take longer time for large images.
 
 ### Compress JPEG
-Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim), `jpegoptim` must be installed before using this workflow. Please note that since `jpegoptim` is a third-party script, it’s [by design](http://developer.apple.com/library/mac/#technotes/tn2065/_index.html) that this script does NOT inherit the `$PATH` variable from your environment, you have to use full path for your `jpegoptim` location, in this workflow, the path of `jpegoptim` is `/usr/local/bin/jpegoptim`. (Installed by [Homebrew](http://mxcl.github.io/homebrew/)).
+Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim).
+
+**Requires**: `jpegoptim`
 
 **Note**: The default compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
 
 ### Compress Images
-This is a much simple workflow bundled with the three individual image compress workflows listed above. It auto detects the file type of selected images and compress them. `.png`, `.jpg` and `.svg` are supported. Of course `optipng`, `pngcrush`, `jpegoptim` and `svgo` must be installed before using this workflow.
+This is a much simple workflow bundled with the three individual image compress workflows listed above. It auto detects the file type of selected images and compress them.
+
+**Requires**: `optipng`, `pngcrush`, `jpegoptim`, and `svgo`
 
 **Note 1**: The default compress options for each type of images is the same as the individual compress workflow.
 
@@ -111,14 +129,6 @@ This is a much simple workflow bundled with the three individual image compress 
 
 ### Encode Selected Files using Base64
 Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).
-
-### Restart Finder
-Restart your Finder without logging out or restarting your system.
-
-:exclamation: **Note**: This workflow is a little bit different from others, in Mountain Lion or higher it can only be executed by Automator, that means you have to open this workflow in Automator and press Run button to execute it.
-
-### Show Files
-Toggle displaying hidden files, it’s also an workflow just like `Restart Finder.app`.
 
 ## Author
 **Tunghsiao Liu**

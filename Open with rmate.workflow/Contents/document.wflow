@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>381</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -180,9 +180,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:498.000000</string>
+				<string>345.000000:487.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -290,9 +290,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:393.000000</string>
+				<string>345.000000:384.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -346,7 +346,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/usr/local/opt/ruby/bin/rmate $1</string>
+					<string>export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+rmate $1</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -459,7 +461,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>343.500000:290.000000</string>
+				<string>345.000000:281.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -469,21 +471,21 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>34517766-8A5F-4071-A0A5-5EA31DDE65E1</key>
+		<key>6B7A392D-A1EA-4F72-8644-8C9AAD091F0A</key>
 		<dict>
 			<key>from</key>
 			<string>C8421D6C-23B5-46E8-943D-C2F9DA57E755 - C8421D6C-23B5-46E8-943D-C2F9DA57E755</string>
 			<key>to</key>
 			<string>5A4A74D3-6395-42EC-940E-BD0262EC9AD2 - 5A4A74D3-6395-42EC-940E-BD0262EC9AD2</string>
 		</dict>
-		<key>62321FBC-9349-4D34-81FB-41C5C6D49838</key>
+		<key>7FBF9053-EB9F-45FB-B915-802CEA133A7A</key>
 		<dict>
 			<key>from</key>
 			<string>0E2450EB-662D-45B3-BECF-1F7951A56B5E - 0E2450EB-662D-45B3-BECF-1F7951A56B5E</string>
 			<key>to</key>
 			<string>C8421D6C-23B5-46E8-943D-C2F9DA57E755 - C8421D6C-23B5-46E8-943D-C2F9DA57E755</string>
 		</dict>
-		<key>69221EF5-3F38-4B61-879A-FB71D3052884</key>
+		<key>CBBEC927-2D14-416B-9E1F-7DD8BF5C3BB9</key>
 		<dict>
 			<key>from</key>
 			<string>80E7140E-7DF9-4D5A-94C3-9C83AEE1523A - 80E7140E-7DF9-4D5A-94C3-9C83AEE1523A</string>

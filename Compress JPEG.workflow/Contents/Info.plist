@@ -8,7 +8,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Compress JPEG with jpegoptim</string>
+				<string>Compress JPEG</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

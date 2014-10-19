@@ -8,7 +8,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Base64</string>
+				<string>Encode Selected Files using Base64</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

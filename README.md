@@ -15,6 +15,26 @@ Please note that some workflows are using third-party scripts, the default path 
 
 ## Available Workflows
 
+- [Create App Iconset](#create-app-iconset)
+- [Create .icns](#create-icns)
+- [Unpack .icns](#unpack-icns)
+- [Create `favicon.ico` (multi-resource)](#create-faviconico-multi-resource)
+- [Create `favicon.ico`](#create-faviconico)
+- [Add `@2x` (`@3x`) Suffix](#add-2x-3x-suffix)
+- [Copy & Add `@2x` (`@3x`) Suffix](#copy--add-2x-3x-suffix)
+- [Create `@2x` (`@3x`) Image](#create-2x-3x-image)
+- [Remove `@2x` (`@3x`) Suffix](#remove-2x-3x-suffix)
+- [Convert Image Format](#convert-image-format)
+- [Resize Images](#resize-images)
+- [Rename Selected Files](#rename-selected-files)
+- [Create DMG Image](#create-dmg-image)
+- [Open with rmate](#open-with-rmate)
+- [Compress SVG](#compress-svg)
+- [Compress PNG](#compress-png)
+- [Compress JPEG](#compress-jpeg)
+- [Compress Images](#compress-images)
+- [Encode Selected Files Using Base64](#encode-selected-files-using-base64)
+
 ### Create App Iconset
 Create the following sizes of icon resources for your OS X app:
 
@@ -41,6 +61,15 @@ Create .icns file using `iconutil`. Command Line Tools from Xcode must be instal
 ### Unpack .icns
 Unpack .icns into .iconset folder. Command Line Tools from Xcode must be installed before using this workflow.
 
+### Create `favicon.ico`
+Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/).
+
+**Requires**: `imagemagick`
+
+**Note 1**: The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
+
+**Note 2**: Sometimes you'll get `convert: iCCP: extra compressed data` error when process PNGs exported from Photoshop, if you got this error, try to compress exported PNGs to remove extra metadata (for example [ImageOptim](https://imageoptim.com/)).
+
 ### Create `favicon.ico` (multi-resource)
 Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 are included.
 
@@ -49,13 +78,6 @@ Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick]
 **Note 1**: You should only select one image, then multi-resource icos are automatically scaled down.
 
 **Note 2**: The selected image should be at least 48x48, for best result, use exact 48x48.
-
-### Create `favicon.ico`
-Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/).
-
-**Requires**: `imagemagick`
-
-**Note 1**: The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
 
 ### Add `@2x` (`@3x`) Suffix
 Add `@2x` or (`@3x`) suffix for retina image assets.
@@ -127,7 +149,7 @@ This is a much simple workflow bundled with the three individual image compress 
 
 **Note 2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 
-### Encode Selected Files using Base64
+### Encode Selected Files Using Base64
 Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).
 
 ## Author

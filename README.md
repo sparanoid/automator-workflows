@@ -34,6 +34,7 @@ Please note that some workflows are using third-party scripts, the default path 
 - [Compress JPEG](#compress-jpeg)
 - [Compress Images](#compress-images)
 - [Encode Selected Files Using Base64](#encode-selected-files-using-base64)
+- [Convert Selected Text to Audio File](#convert-selected-text-to-audio-file)
 
 ### Create App Iconset
 Create the following sizes of icon resources for your OS X app:
@@ -151,6 +152,9 @@ This is a much simple workflow bundled with the three individual image compress 
 
 ### Encode Selected Files Using Base64
 Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).
+
+### Convert Selected Text to Audio File
+Convert selected text to audio file (AIFF) in any application
 
 ## Author
 **Tunghsiao Liu**

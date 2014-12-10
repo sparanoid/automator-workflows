@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>345.000000:800.000000</string>
+				<string>298.500000:813.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -294,7 +294,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>345.000000:696.000000</string>
+				<string>298.500000:709.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -352,6 +352,8 @@
 					<key>COMMAND_STRING</key>
 					<string>export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
+BIN_PATH=~/Library/Services/.bin
+
 for f in "$@"; do
 	if [ -d $f ]; then
 		echo "TODO: nothing to compress now!"
@@ -359,12 +361,12 @@ for f in "$@"; do
 		if hash optipng 2&gt;/dev/null; then
 			optipng -o7 "$f"
 		else
-			echo "No OptiPNG installed, skipped."
+			$BIN_PATH/optipng -o7 "$f"
 		fi
 		if hash pngcrush 2&gt;/dev/null; then
 			pngcrush -brute -reduce -ow "$f"
 		else
-			echo "No Pngcrush installed, skipped."
+			$BIN_PATH/pngcrush -brute -reduce -ow "$f"
 		fi
 	elif [[ $f == *.jpg ]]; then
 		if hash jpegoptim 2&gt;/dev/null; then
@@ -497,7 +499,7 @@ done;
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>345.000000:593.000000</string>
+				<string>298.500000:606.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -507,21 +509,21 @@ done;
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>54178172-A177-484E-B1EA-6AAAB00A901F</key>
+		<key>44A540DC-598B-4317-86A3-3B7F2E27288E</key>
 		<dict>
 			<key>from</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 			<key>to</key>
 			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
-		<key>758E6F67-7F95-402E-A9F7-D9029462DAE5</key>
+		<key>44B43FE5-29EF-43CE-9486-001C41D06227</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 		</dict>
-		<key>DB8C2F0A-C427-4DC9-8C77-A5CBF90F69D4</key>
+		<key>C3801FDE-2297-4921-A172-CBB09C195273</key>
 		<dict>
 			<key>from</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>

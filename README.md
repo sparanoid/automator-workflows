@@ -29,9 +29,6 @@ Please note that some workflows are using third-party scripts, the default path 
 - [Rename Selected Files](#rename-selected-files)
 - [Create DMG Image](#create-dmg-image)
 - [Open with rmate](#open-with-rmate)
-- [Compress SVG](#compress-svg)
-- [Compress PNG](#compress-png)
-- [Compress JPEG](#compress-jpeg)
 - [Compress Images](#compress-images)
 - [Encode Selected Files Using Base64](#encode-selected-files-using-base64)
 - [Convert Selected Text to Audio File](#convert-selected-text-to-audio-file)
@@ -69,7 +66,7 @@ Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.ima
 
 **Note 1**: The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
 
-**Note 2**: Sometimes you'll get `convert: iCCP: extra compressed data` error when process PNGs exported from Photoshop, if you got this error, try to compress exported PNGs to remove extra metadata (for example [ImageOptim](https://imageoptim.com/)).
+**Note 2**: Sometimes you'll get `convert: iCCP: extra compressed data` error when process PNGs exported from Photoshop, if you got this error, try to compress exported PNGs to remove extra metadata (for example using [Compress Images](#compress-images) workflow or [ImageOptim](https://imageoptim.com/)).
 
 ### Create `favicon.ico` (multi-resource)
 Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 are included.
@@ -118,15 +115,14 @@ Open selected file with [rmate](https://github.com/textmate/rmate).
 
 **Requires**: `rmate`
 
-### Compress SVG
-Compress selected SVG files with [svgo](https://github.com/svg/svgo).
+### Compress Images
+Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supported. It auto detects the file type of selected images and compress them. [OptiPNG](http://optipng.sourceforge.net/), [Pngcrush](http://pmt.sourceforge.net/pngcrush/), [jpegoptim](http://github.com/tjko/jpegoptim), and [svgo](https://github.com/svg/svgo) are used.
 
-**Requires**: `svgo`
+**Requires**: `optipng` (bundled), `pngcrush` (bundled), `jpegoptim`, and `svgo`
 
-### Compress PNG
-Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and [Pngcrush](http://pmt.sourceforge.net/pngcrush/).
+**Note 1**: The default compress options for each type of images is the same as the individual compress workflow.
 
-**Requires**: `optipng`, and `pngcrush`
+**Note 2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `jpegoptim`, but only `.jpg` will be compressed when you run this workflow, all other PNG and SVG files you selected will be skipped.
 
 **Note 1**: The default `optipng` compress option is set to `-o7` (smallest file size and slowest), you may need change that.
 
@@ -134,21 +130,7 @@ Compress selected PNG files with [OptiPNG](http://optipng.sourceforge.net/), and
 
 **Note 3**: `pngcrush` will take longer time for large images.
 
-### Compress JPEG
-Compress selected JPEG files with [jpegoptim](http://github.com/tjko/jpegoptim).
-
-**Requires**: `jpegoptim`
-
-**Note**: The default compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
-
-### Compress Images
-This is a much simple workflow bundled with the three individual image compress workflows listed above. It auto detects the file type of selected images and compress them.
-
-**Requires**: `optipng`, `pngcrush`, `jpegoptim`, and `svgo`
-
-**Note 1**: The default compress options for each type of images is the same as the individual compress workflow.
-
-**Note 2**: It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `optipng` and `jpegoptim`, but only `.png` and `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
+**Note**: The default `jpegoptim` compress option is set to `--strip-all --force --all-progressive` (lossless compression, remove comment, Exif and ICC profile, force all outputs to be progressive), You may need change that.
 
 ### Encode Selected Files Using Base64
 Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).

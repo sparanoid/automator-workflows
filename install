@@ -61,7 +61,7 @@ if ask "** Are you sure you want to install?" N; then
   # Copy workflows to Services folder
   echo -e "$P Copying workflows to ~/Library/Services/"
   cp -RfX $dist_path/$package_name/*.workflow $dist_path/
-  cp -RfX $dist_path/$package_name/.bin $dist_path/.bin
+  cp -RfX $dist_path/$package_name/.bin $dist_path/.bin/
 
   # Remove junk
   echo -e "$P Cleaning up..."

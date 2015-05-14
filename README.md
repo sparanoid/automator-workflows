@@ -49,7 +49,7 @@ icon_32x32      | 32×32
 icon_16x16@2x   | 32×32
 icon_16x16      | 16×16
 
-The icon you created should be 1024×1024 with an sRGB color profile. You can read more about icon design guidelines [here](http://developer.apple.com/library/mac/documentation/userexperience/conceptual/applehiguidelines/IconsImages/IconsImages.html).
+The icon you created should be 1024×1024 with an sRGB color profile. You can read more about icon design guidelines [here](http://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Designing.html).
 
 **Note**: You should always select the original file during the workflow, don’t press any key or click your mouse.
 

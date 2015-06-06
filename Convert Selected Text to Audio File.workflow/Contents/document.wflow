@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -111,14 +111,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:553.000000</string>
+				<string>239.500000:112.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -223,14 +223,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:449.000000</string>
+				<string>239.500000:154.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -375,26 +375,26 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:346.000000</string>
+				<string>239.500000:196.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Text to Audio File.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>629F6836-90EF-420E-A99C-DF2E9CA47AAD</key>
+		<key>8390F1ED-301C-4BB5-872A-2F590CD06197</key>
 		<dict>
 			<key>from</key>
 			<string>7E8A1B1B-44AA-438E-B830-861685F13BC0 - 7E8A1B1B-44AA-438E-B830-861685F13BC0</string>
 			<key>to</key>
 			<string>626D8193-F3E1-4B88-870D-36F04AF5D010 - 626D8193-F3E1-4B88-870D-36F04AF5D010</string>
 		</dict>
-		<key>72F8A60B-7FB6-45BC-A688-E10DD9668263</key>
+		<key>849C3E79-BD5D-41E9-9D07-58C0CB24B89A</key>
 		<dict>
 			<key>from</key>
 			<string>19B0C9D9-B6A5-4D9C-8DDD-2282CF2A3010 - 19B0C9D9-B6A5-4D9C-8DDD-2282CF2A3010</string>

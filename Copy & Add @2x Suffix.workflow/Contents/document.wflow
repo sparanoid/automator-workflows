@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -172,7 +172,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Replace Text</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -553,14 +553,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>364.000000:896.000000</string>
+				<string>239.500000:154.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -651,7 +651,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Replace Text</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -1032,14 +1032,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>364.000000:677.000000</string>
+				<string>239.500000:196.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1130,7 +1130,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Replace Text</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -1511,14 +1511,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>364.000000:458.000000</string>
+				<string>239.500000:238.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -1609,7 +1609,7 @@
 				<key>ActionBundlePath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Replace Text</string>
+				<string>Rename Finder Items: Replace Text</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>caseIndicator</key>
@@ -1990,45 +1990,45 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>364.000000:239.000000</string>
+				<string>239.500000:280.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0103FDEB-EF06-4B81-B490-31BBAB861536</key>
+		<key>122A5070-3306-4D7D-988D-B245B188092C</key>
 		<dict>
 			<key>from</key>
-			<string>88B394BE-C15C-4FEE-A53D-A1107F5C8537 - 88B394BE-C15C-4FEE-A53D-A1107F5C8537</string>
-			<key>to</key>
 			<string>92610FB0-64CE-4BF5-8324-0AAB92DC32E8 - 92610FB0-64CE-4BF5-8324-0AAB92DC32E8</string>
+			<key>to</key>
+			<string>CEC586EF-3810-4866-AB4A-B448367B4398 - CEC586EF-3810-4866-AB4A-B448367B4398</string>
 		</dict>
-		<key>2BB025B3-B3AD-43CC-9E70-15A47AF09985</key>
+		<key>22A7FD0B-FF86-4775-AF65-3838AC3022D8</key>
+		<dict>
+			<key>from</key>
+			<string>CEC586EF-3810-4866-AB4A-B448367B4398 - CEC586EF-3810-4866-AB4A-B448367B4398</string>
+			<key>to</key>
+			<string>300CFA27-45B2-4D50-BA6F-9B258DAC5558 - 300CFA27-45B2-4D50-BA6F-9B258DAC5558</string>
+		</dict>
+		<key>75EEDDFC-28FF-428D-BDC9-962EDB398B2D</key>
 		<dict>
 			<key>from</key>
 			<string>300CFA27-45B2-4D50-BA6F-9B258DAC5558 - 300CFA27-45B2-4D50-BA6F-9B258DAC5558</string>
 			<key>to</key>
 			<string>C8EACC5C-BC97-4F00-B5C9-B5DADDC5239E - C8EACC5C-BC97-4F00-B5C9-B5DADDC5239E</string>
 		</dict>
-		<key>4303B777-F694-4C2A-AF56-73C115E862B7</key>
+		<key>B928F18A-C229-4EA2-9E8E-96EE41E119A1</key>
 		<dict>
 			<key>from</key>
-			<string>CEC586EF-3810-4866-AB4A-B448367B4398 - CEC586EF-3810-4866-AB4A-B448367B4398</string>
+			<string>88B394BE-C15C-4FEE-A53D-A1107F5C8537 - 88B394BE-C15C-4FEE-A53D-A1107F5C8537</string>
 			<key>to</key>
-			<string>300CFA27-45B2-4D50-BA6F-9B258DAC5558 - 300CFA27-45B2-4D50-BA6F-9B258DAC5558</string>
-		</dict>
-		<key>FD0963E3-DD47-4BF6-B255-1900BA5E5B5E</key>
-		<dict>
-			<key>from</key>
 			<string>92610FB0-64CE-4BF5-8324-0AAB92DC32E8 - 92610FB0-64CE-4BF5-8324-0AAB92DC32E8</string>
-			<key>to</key>
-			<string>CEC586EF-3810-4866-AB4A-B448367B4398 - CEC586EF-3810-4866-AB4A-B448367B4398</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

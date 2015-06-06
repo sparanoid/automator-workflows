@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -178,14 +178,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>345.000000:487.000000</string>
+				<string>239.500000:154.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -288,14 +288,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>345.000000:383.000000</string>
+				<string>239.500000:196.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -459,38 +459,38 @@ done;</string>
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>345.000000:280.000000</string>
+				<string>239.500000:238.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2E1BAC04-4A2C-44EE-95F7-073DCE479570</key>
-		<dict>
-			<key>from</key>
-			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
-			<key>to</key>
-			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>
-		</dict>
-		<key>86822495-7DEA-4473-B1A3-39B04AC1720F</key>
+		<key>2A38CD35-D6E6-493A-942A-AA04F5ED6B3B</key>
 		<dict>
 			<key>from</key>
 			<string>57255359-7FC2-4021-B573-924607F34971 - 57255359-7FC2-4021-B573-924607F34971</string>
 			<key>to</key>
 			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
 		</dict>
-		<key>8683C390-E666-4DFF-B443-9FF3B45F0690</key>
+		<key>6FF81129-8DD6-43DB-BAD4-FF4ED048743C</key>
 		<dict>
 			<key>from</key>
 			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>
 			<key>to</key>
 			<string>B9F90851-5A35-48B4-AE10-5715F725506C - B9F90851-5A35-48B4-AE10-5715F725506C</string>
+		</dict>
+		<key>AD9C4602-F6CA-4025-89BF-3F897A2189AF</key>
+		<dict>
+			<key>from</key>
+			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
+			<key>to</key>
+			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>
 		</dict>
 	</dict>
 	<key>variables</key>

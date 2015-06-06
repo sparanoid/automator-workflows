@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409.2</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -180,14 +180,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:813.000000</string>
+				<string>239.500000:154.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -292,14 +292,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:709.000000</string>
+				<string>239.500000:196.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -497,33 +497,33 @@ done;
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>298.500000:606.000000</string>
+				<string>239.500000:238.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>44A540DC-598B-4317-86A3-3B7F2E27288E</key>
+		<key>81F1725E-5D8F-4DB2-938F-F4F4B4810CB0</key>
 		<dict>
 			<key>from</key>
 			<string>A11D77B6-4B2D-4990-9AFB-6E0BBC145375 - A11D77B6-4B2D-4990-9AFB-6E0BBC145375</string>
 			<key>to</key>
 			<string>CFB0951C-1076-4028-92A0-490967D87A87 - CFB0951C-1076-4028-92A0-490967D87A87</string>
 		</dict>
-		<key>44B43FE5-29EF-43CE-9486-001C41D06227</key>
+		<key>B7BE26CB-AD13-41C0-8407-F762E18B7BB2</key>
 		<dict>
 			<key>from</key>
 			<string>373E06E1-FEF9-4E70-9172-4F8ADA9D86BE - 373E06E1-FEF9-4E70-9172-4F8ADA9D86BE</string>
 			<key>to</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>
 		</dict>
-		<key>C3801FDE-2297-4921-A172-CBB09C195273</key>
+		<key>CBD81BC4-F2E6-4873-9A88-AE4A84F200ED</key>
 		<dict>
 			<key>from</key>
 			<string>182A2489-E9F1-46BF-AC39-72829EF82D8C - 182A2489-E9F1-46BF-AC39-72829EF82D8C</string>

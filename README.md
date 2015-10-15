@@ -35,6 +35,7 @@ Please note that some workflows are using third-party scripts, the default path 
 - [Compress Images](#compress-images)
 - [Encode Selected Files Using Base64](#encode-selected-files-using-base64)
 - [Convert Selected Text to Audio File](#convert-selected-text-to-audio-file)
+- [Convert .ass to .srt](#convert-ass-to-srt)
 
 ### Create App Iconset
 
@@ -156,6 +157,10 @@ Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org
 ### Convert Selected Text to Audio File
 
 Convert selected text to audio file (AIFF) in any application
+
+### Convert .ass to .srt
+
+Convert .ass subtitles to .srt subtitles. [sorz/asstosrt](https://github.com/sorz/asstosrt) must be installed before using this workflow.
 
 ## Author
 

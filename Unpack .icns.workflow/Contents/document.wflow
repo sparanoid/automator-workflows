@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.2</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -180,7 +180,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>239.500000:154.000000</string>
+				<string>328.500000:178.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -290,7 +290,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>239.500000:196.000000</string>
+				<string>328.500000:220.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -346,7 +346,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>iconutil -c iconset $1</string>
+					<string>iconutil -c iconset "$1"</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -459,7 +459,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>239.500000:238.000000</string>
+				<string>328.500000:262.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -469,21 +469,21 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>599E9E37-6B9D-44CC-A6A5-F00F1652B523</key>
-		<dict>
-			<key>from</key>
-			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
-			<key>to</key>
-			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>
-		</dict>
-		<key>78ABD51E-AF67-4E16-A1D3-F30CF016D84D</key>
+		<key>0A84F978-514B-487F-8072-20509A98C122</key>
 		<dict>
 			<key>from</key>
 			<string>57255359-7FC2-4021-B573-924607F34971 - 57255359-7FC2-4021-B573-924607F34971</string>
 			<key>to</key>
 			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
 		</dict>
-		<key>9189987F-B34B-482F-858C-C94C77679917</key>
+		<key>1C3401CD-A4E7-44D3-90C9-96A8A5B04B92</key>
+		<dict>
+			<key>from</key>
+			<string>8C5D1A60-C8D0-4328-9390-AAAB5639899C - 8C5D1A60-C8D0-4328-9390-AAAB5639899C</string>
+			<key>to</key>
+			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>
+		</dict>
+		<key>DD856124-FA62-4813-B891-EB3E675D443B</key>
 		<dict>
 			<key>from</key>
 			<string>1607026E-D235-4CBA-844A-CF9A6362BB37 - 1607026E-D235-4CBA-844A-CF9A6362BB37</string>

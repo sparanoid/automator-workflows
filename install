@@ -39,7 +39,7 @@ function ask {
 
 echo -e "\nTUNGHSIAO LIU’S AUTOMATOR WORKFLOWS"
 echo -e "-----------------------------------"
-echo -e "\nby Tunghsiao Liu - 2014\n"
+echo -e "\nby Tunghsiao Liu - 2017\n"
 echo -e "You're going to install Tunghsiao Liu’s Automator Workflows collection,"
 echo -e "it's safe to run this script, you can view the source at: \n"
 echo -e "   https://raw.github.com/sparanoid/automator-workflows/go/install \n"

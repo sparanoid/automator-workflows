@@ -139,7 +139,12 @@ Open selected file with [rmate](https://github.com/textmate/rmate).
 
 Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supported. It auto detects the file type of selected images and compress them. [OptiPNG](http://optipng.sourceforge.net/), [Pngcrush](http://pmt.sourceforge.net/pngcrush/), [jpegoptim](http://github.com/tjko/jpegoptim), and [svgo](https://github.com/svg/svgo) are used.
 
-**Requires**: `optipng` (bundled), `pngcrush` (bundled), `jpegoptim`, and `svgo`
+**Requires**:
+
+- `optipng` (bundled)
+- `pngcrush` (bundled)
+- `jpegoptim`
+- `svgo`
 
 **Notes:**
 

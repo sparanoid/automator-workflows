@@ -74,12 +74,12 @@ Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.ima
 
 **Notes**:
 
-1. The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 48x48 (3x) resource is generated, so you'll get smaller file size.
+1. The generated `favicon.ico` also works on all platforms include high-res devices. The different from “multi-resource” action is only 64x64 (4x) resource is generated, so you'll get smaller file size.
 2. Sometimes you'll get `convert: iCCP: extra compressed data` error when process PNGs exported from Photoshop, if you got this error, try to compress exported PNGs to remove extra metadata (for example using [Compress Images](#compress-images) workflow or [ImageOptim](https://imageoptim.com/)).
 
 ### Create `favicon.ico` (multi-resource)
 
-Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 48x48 (3x), 32x32 (2x), and 16x16 are included.
+Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 64x64 (4x), 48x48 (3x), 32x32 (2x), and 16x16 are included.
 
 **Requires**: `imagemagick`
 
@@ -144,7 +144,7 @@ Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supp
 **Notes:**
 
 1. The default compress options for each type of images is the same as the individual compress workflow.
-2. It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `jpegoptim`, but only `.jpg` will be compressed when you run this workflow, all other PNG and SVG files you selected will be skipped.
+2. It’s okay to run this workflow if you only install some of required dependencies, for example, you can just installed `jpegoptim`, but only `.jpg` will be compressed when you run this workflow, all other SVG files you selected will be skipped.
 3. The default `optipng` compress option is set to `-o7` (smallest file size and slowest), you may need change that.
 4. The default `pngcrush` compress option is set to `-brute -reduce -ow` (try 138 different methods and do lossless color-type or bit-depth reduction), you may need change that.
 5. `pngcrush` will take longer time for large images.

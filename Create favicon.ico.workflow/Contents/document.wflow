@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>428</string>
+	<string>444.38</string>
 	<key>AMApplicationVersion</key>
-	<string>2.7</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -50,7 +50,7 @@
 				<key>ActionParameters</key>
 				<dict/>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Get_Selected_Finder_Items_2</string>
+				<string>com.apple.Automator.GetSelectedFinderItems2</string>
 				<key>CFBundleVersion</key>
 				<string>2.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -132,7 +132,7 @@
 					<string>B0B74A29-EEA9-435E-8C5C-4C20D26E6544</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Set_Value_of_Variable</string>
+				<string>com.apple.Automator.SetValueofVariable</string>
 				<key>CFBundleVersion</key>
 				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>217.000000:178.000000</string>
+				<string>408.500000:229.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -242,7 +242,7 @@
 					<string>B0B74A29-EEA9-435E-8C5C-4C20D26E6544</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Get_Value_of_Variable</string>
+				<string>com.apple.Automator.GetValueofVariable</string>
 				<key>CFBundleVersion</key>
 				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -294,7 +294,7 @@
 				<key>isViewVisible</key>
 				<false/>
 				<key>location</key>
-				<string>217.000000:220.000000</string>
+				<string>408.500000:270.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -361,7 +361,7 @@ for f in "$@"; do
 
 	convert "$f" \
 	\( -clone 0 -resize 64x64 \) \
-	-delete 0 $favicon_name.ico
+	-delete 0 "${favicon_name}.ico"
 
 done;
 </string>
@@ -400,8 +400,6 @@ done;
 				</array>
 				<key>OutputUUID</key>
 				<string>8AE7E7B1-AA6F-4987-B972-DD6E58C85623</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>4248E4B7-DFA8-4EA6-BF94-252B724FDEC2</string>
 				<key>UnlocalizedApplications</key>
@@ -477,33 +475,33 @@ done;
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<false/>
+				<true/>
 				<key>location</key>
-				<string>217.000000:262.000000</string>
+				<string>408.500000:609.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<false/>
+			<true/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>304C96DB-5B55-4439-89E2-9C202C8F92A2</key>
+		<key>165B0EA1-2856-4DFF-8184-5E8262926132</key>
 		<dict>
 			<key>from</key>
 			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 			<key>to</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
 		</dict>
-		<key>9E4CC5C5-03F5-49CC-97BE-A3AFDC488836</key>
+		<key>E32A1938-C589-479A-9031-E5943E16A3F0</key>
 		<dict>
 			<key>from</key>
 			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>
 			<key>to</key>
 			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 		</dict>
-		<key>A4FAEF04-1BB6-4477-A973-4BE6C49A8579</key>
+		<key>E91E76C3-2465-4A44-9E8D-9F393CFF2B7E</key>
 		<dict>
 			<key>from</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
@@ -524,11 +522,27 @@ done;
 	</array>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>applicationBundleIDsByPath</key>
+		<dict/>
+		<key>applicationPaths</key>
+		<array/>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.fileSystemObject.image</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSActionTemplate</string>
+		<key>useAutomaticInputType</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>

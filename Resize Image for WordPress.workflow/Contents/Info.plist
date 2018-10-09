@@ -12,7 +12,7 @@
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>
-				<string>Create favicon.ico (multi-resource)</string>
+				<string>Resize Image for WordPress</string>
 			</dict>
 			<key>NSMessage</key>
 			<string>runWorkflowAsService</string>

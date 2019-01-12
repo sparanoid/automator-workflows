@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>444.38</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
 	<string>2.9</string>
 	<key>AMDocumentVersion</key>
@@ -182,7 +182,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>419.000000:293.000000</string>
+				<string>280.500000:293.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -294,7 +294,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>419.000000:395.000000</string>
+				<string>280.500000:395.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -362,7 +362,7 @@ for f in "$@"; do
 	convert "$f" \
 	\( -clone 0 -resize 16x16 \) \
 	\( -clone 0 -resize 32x32 \) \
-	\( -clone 0 -resize 48x48 \) \
+	\( -clone 0 -resize 64x64 \) \
 	-delete 0 "${favicon_name}.ico"
 
 done;
@@ -479,7 +479,7 @@ done;
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>419.000000:697.000000</string>
+				<string>280.500000:577.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -489,26 +489,26 @@ done;
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>4F8565FD-A4C5-4341-95FD-B00E1F69CB04</key>
-		<dict>
-			<key>from</key>
-			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>
-			<key>to</key>
-			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
-		</dict>
-		<key>62CA69E7-FC8F-4E0F-8DA5-BA529FEA361D</key>
+		<key>37B950C8-0915-4CB8-ACC7-DC5F5E30A63F</key>
 		<dict>
 			<key>from</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
 			<key>to</key>
 			<string>4248E4B7-DFA8-4EA6-BF94-252B724FDEC2 - 4248E4B7-DFA8-4EA6-BF94-252B724FDEC2</string>
 		</dict>
-		<key>D9CD6DB0-CCFA-4BFD-A27D-937521D56109</key>
+		<key>6408FBB7-7CE3-4BDE-AAAA-8C9A73A19F7C</key>
 		<dict>
 			<key>from</key>
 			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 			<key>to</key>
 			<string>CE53F237-7D04-431C-902F-F1A4EDC360CF - CE53F237-7D04-431C-902F-F1A4EDC360CF</string>
+		</dict>
+		<key>A42EEA9C-0858-4DC7-9A9B-7AB566A26368</key>
+		<dict>
+			<key>from</key>
+			<string>92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8 - 92429C5C-D4BF-4A03-BDA0-9E5A7FD232D8</string>
+			<key>to</key>
+			<string>2A73681A-6F01-4277-9758-E9ECCE043C34 - 2A73681A-6F01-4277-9758-E9ECCE043C34</string>
 		</dict>
 	</dict>
 	<key>variables</key>

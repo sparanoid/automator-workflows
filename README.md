@@ -14,7 +14,7 @@ The script explains what it will do and then pauses before it does it. If you do
 
 ## Other Notes
 
-Please note that some workflows are using third-party scripts, the default path of them (for example `imagemagick`) is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](http://brew.sh/)).
+Please note that some workflows are using third-party scripts, the default path of them (for example `imagemagick`) is `/usr/local/bin/imagemagick`. (Installed by [Homebrew](https://brew.sh/)).
 
 ## Available Workflows
 
@@ -54,7 +54,7 @@ icon_32x32      | 32×32
 icon_16x16@2x   | 32×32
 icon_16x16      | 16×16
 
-The icon you created should be 1024×1024 with an sRGB color profile. You can read more about icon design guidelines [here](http://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Designing.html).
+The icon you created should be 1024×1024 with an sRGB color profile. You can read more about icon design guidelines [here](https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Designing.html).
 
 **Note**: You should always select the original file during the workflow, don’t press any key or click your mouse.
 
@@ -79,7 +79,7 @@ Create a `favicon.ico` from selected PNG image with [ImageMagick](http://www.ima
 
 ### Create `favicon.ico` (multi-resource)
 
-Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 64x64 (4x), 48x48 (3x), 32x32 (2x), and 16x16 are included.
+Create a multi-resource `favicon.ico` from selected PNG image with [ImageMagick](http://www.imagemagick.org/), 64x64, 32x32, and 16x16 are included.
 
 **Requires**: `imagemagick`
 
@@ -137,7 +137,7 @@ Open selected file with [rmate](https://github.com/textmate/rmate).
 
 ### Compress Images
 
-Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supported. It auto detects the file type of selected images and compress them. [OptiPNG](http://optipng.sourceforge.net/), [Pngcrush](http://pmt.sourceforge.net/pngcrush/), [jpegoptim](http://github.com/tjko/jpegoptim), and [svgo](https://github.com/svg/svgo) are used.
+Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supported. It auto detects the file type of selected images and compress them. [OptiPNG](http://optipng.sourceforge.net/), [Pngcrush](http://pmt.sourceforge.net/pngcrush/), [jpegoptim](https://github.com/tjko/jpegoptim), and [svgo](https://github.com/svg/svgo) are used.
 
 **Requires**:
 
@@ -157,7 +157,7 @@ Compress selected images based on file type, `.png`, `.jpg`, and `.svg` are supp
 
 ### Encode Selected Files Using Base64
 
-Encode Selected Files using Base64 for [data URI scheme](http://en.wikipedia.org/wiki/Data_URI_scheme).
+Encode Selected Files using Base64 for [data URI scheme](https://en.wikipedia.org/wiki/Data_URI_scheme).
 
 ### Convert Selected Text to Audio File
 
@@ -171,8 +171,8 @@ Convert .ass subtitles to .srt subtitles. [sorz/asstosrt](https://github.com/sor
 
 **Tunghsiao Liu**
 
-- Twitter: @[tunghsiao](http://twitter.com/tunghsiao)
-- GitHub: @[sparanoid](http://github.com/sparanoid)
+- Twitter: @[tunghsiao](https://twitter.com/tunghsiao)
+- GitHub: @[sparanoid](https://github.com/sparanoid)
 
 ## License
 

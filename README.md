@@ -28,6 +28,7 @@ Please note that some workflows are using third-party scripts, the default path 
 - [Create `@2x` (`@3x`) Image](#create-2x-3x-image)
 - [Remove `@2x` (`@3x`) Suffix](#remove-2x-3x-suffix)
 - [Convert Image Format](#convert-image-format)
+- [Convert WebP to PNG](#convert-webp-to-png)
 - [Resize Images](#resize-images)
 - [Rename Selected Files](#rename-selected-files)
 - [Create DMG Image](#create-dmg-image)
@@ -112,6 +113,10 @@ Remove `@2x` and (`@3x`) suffix for retina image assets. Useful when you’re do
 ### Convert Image Format
 
 Convert selected images to specific format.
+
+### Convert WebP to PNG
+
+Convert selected WebP images to PNG. `dwebp` must be installed via `brew install webp`.
 
 ### Resize Images
 

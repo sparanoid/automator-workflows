@@ -3,5 +3,5 @@
 ## Update
 
 ```shell
-sh .bin/update.sh
+bash .bin/update.sh
 ```
